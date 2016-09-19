@@ -97,7 +97,7 @@ var runData = function() {
       .attr("cy", h/2)
       .attr("cx", h/2)
       .attr("r", function(d) {
-        return d * 15;
+        return d * 25;
       })
       .attr("fill", "rgba(0, 153, 153,0.3)")
       .attr("stroke", "darkgrey")
