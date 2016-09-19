@@ -19,8 +19,7 @@ svg {
   opacity:0;
 }
 .cell:hover {
-  fill: darkgrey;
-  stroke: teal;
+  fill:rgba(0,0,0,0.3);
   -webkit-transition:.3s;
   transition:.3s;
   cursor:pointer;
