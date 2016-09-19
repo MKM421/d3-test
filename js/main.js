@@ -99,7 +99,7 @@ var runData = function() {
       .attr("r", function(d) {
         return d * 15;
       })
-      .attr("fill", "teal")
+      .attr("fill", "rgba(0, 153, 153,0.3)")
       .attr("stroke", "darkgrey")
       .attr("stroke-width", function(d) {
         return d/2;

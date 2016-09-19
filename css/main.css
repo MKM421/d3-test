@@ -5,6 +5,7 @@ body {
 svg {
   width:100%;
   margin:0 auto;
+  position:relative;
 }
 .cell {
   -webkit-transition:.3s;
@@ -19,24 +20,42 @@ svg {
   cursor:pointer;
 
 }
-.fa.fa-space-shuttle {
-  position:fixed;
-  z-index:9999;
-  bottom:20px;
-  right:20px;
-  font-size:150px;
-  color:darkgrey;
+a,
+a:hover {
   -webkit-transition:.3s;
   transition:.3s;
   cursor:pointer;
+  font-family:helvetica neue;
+  font-weight:200;
 }
-.fa.fa-space-shuttle:hover {
-  opacity:.4;
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+
+#launch {
+  position:fixed;
+  background:transparent;
+  border:2px solid darkgrey;
+  border-radius:40px;
+  z-index:9999;
+  top:45%;
+  right:20px;
+  font-size:24px;
+  padding:10px 35px;
+  color:darkgrey;
+/*  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);*/
   -webkit-transition:.3s;
   transition:.3s;
+}
+#launch:hover {
+  opacity:.4;
+/*  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);*/
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+.fa.fa-space-shuttle:hover span {
+  opacity:0;
 }
 #stuff {
   margin:0 auto;
