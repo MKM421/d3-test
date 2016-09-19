@@ -1,0 +1,59 @@
+body {
+  margin:0 auto;
+  background:teal;
+}
+svg {
+  width:100%;
+  margin:0 auto;
+}
+.cell {
+  -webkit-transition:.3s;
+  transition:.3s;
+  opacity:0;
+}
+.cell:hover {
+  fill: darkgrey;
+  stroke: teal;
+  -webkit-transition:.3s;
+  transition:.3s;
+  cursor:pointer;
+
+}
+.fa.fa-space-shuttle {
+  position:fixed;
+  z-index:9999;
+  bottom:20px;
+  right:20px;
+  font-size:150px;
+  color:darkgrey;
+  -webkit-transition:.3s;
+  transition:.3s;
+  cursor:pointer;
+}
+.fa.fa-space-shuttle:hover {
+  opacity:.4;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+#stuff {
+  margin:0 auto;
+  width:100%;
+}
+.bar {
+  display: inline-block;
+  width: 45px;
+  height: 75px;   /* We'll override this later */
+  background-color: teal;
+  margin:0 5px;
+  -webkit-transition: .3s;
+transition: .3s;
+}
+.bar:hover {
+  background:#888;
+  cursor:pointer;
+  -webkit-transition: .3s;
+transition: .3s;
+}
