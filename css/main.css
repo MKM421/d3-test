@@ -35,15 +35,15 @@ a:hover {
 
 #launch {
   position:fixed;
-  background:transparent;
-  border:2px solid darkgrey;
+  background:rgba(0,0,0,0.5);
+  border:2px solid rgba(255,255,255,0.3);
   border-radius:40px;
   z-index:9999;
   top:20px;
   left:50%;
-  font-size:24px;
+  font-size:26px;
   padding:10px 35px;
-  color:darkgrey;
+  color:rgba(255,255,255,0.6);
 /*  -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);*/
