@@ -1,4 +1,6 @@
 body {
+  width:100%;
+  height:auto;
   margin:0 auto;
   background:teal;
   background-repeat:no-repeat;
@@ -39,9 +41,9 @@ a:hover {
   border:2px solid rgba(255,255,255,0.3);
   border-radius:40px;
   z-index:9999;
-  top:20px;
-  left:50%;
-  font-size:26px;
+  bottom:20px;
+  left:20px;
+  font-size:28px;
   padding:10px 35px;
   color:rgba(255,255,255,0.6);
 /*  -webkit-transform: rotate(-90deg);
@@ -51,7 +53,7 @@ a:hover {
   transition:.3s;
 }
 #launch:hover {
-  opacity:.4;
+
 /*  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);*/
