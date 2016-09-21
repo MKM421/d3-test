@@ -1,10 +1,10 @@
 
-var runData = function() {
 
+var runData = function() {
 
   //Initialize empty array
   var dataset = [];
-  // Loop through random array of integers 100X
+  // Loop through random array of integers 50X
   for (var i = 0; i < 50; i++) {
       //var newNumber = Math.random() * 30;  //New random number (0-30)
       var newNumber = Math.round(Math.random() * 30);
@@ -43,7 +43,7 @@ var runData = function() {
    .enter()
    .append("circle");
    circles.attr("cx", function(d, i) {
-      return (i * 50) + 0;
+      return (i * 30) + 0;
     })
       // add class to each circle
       .attr("class", "cell")
@@ -51,12 +51,12 @@ var runData = function() {
       //.attr("cx", h/2)
       // increase radius 25X value
       .attr("r", function(d) {
-        return d * 5;
+        return d * 3;
       })
       .attr("fill", "rgba(0, 153, 153,0.3)")
       .attr("stroke", "darkgrey")
       .attr("stroke-width", function(d) {
-        return d/15;
+        return d/20;
       })
       .transition()
       .delay(function(d, i) {

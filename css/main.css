@@ -78,4 +78,5 @@ a:hover {
   color:lightgrey;
   letter-spacing:1px;
   font-weight:100;
+  max-width:300px;
 }
