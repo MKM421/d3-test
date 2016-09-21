@@ -1,15 +1,16 @@
 
 var runData = function() {
 
-  //Circles
 
-  // Loop through random array of integers
-  var dataset = [];                        //Initialize empty array
-  for (var i = 0; i < 100; i++) {           //Loop 25 times
+  //Initialize empty array
+  var dataset = [];
+  // Loop through random array of integers 100X
+  for (var i = 0; i < 50; i++) {
       //var newNumber = Math.random() * 30;  //New random number (0-30)
       var newNumber = Math.round(Math.random() * 30);
       //var newNumber = Math.PI;
-      dataset.push(newNumber);             //Add new number to array
+      //Add new number to array
+      dataset.push(newNumber);
   }
 
   // Loop through Fibonacci sequence
@@ -26,9 +27,9 @@ var runData = function() {
   }
 */
 
-
+  // width/height of SVG container
   var w = 1200;
-  var h = 1000;
+  var h = 800;
 
   // Selecting/creating SVG elements
   var svg = d3.select("body")
@@ -42,18 +43,20 @@ var runData = function() {
    .enter()
    .append("circle");
    circles.attr("cx", function(d, i) {
-      return (i * 50) + 50;
+      return (i * 50) + 0;
     })
+      // add class to each circle
       .attr("class", "cell")
       .attr("cy", h/2)
-      .attr("cx", h/2)
+      //.attr("cx", h/2)
+      // increase radius 25X value
       .attr("r", function(d) {
-        return d * 25;
+        return d * 5;
       })
       .attr("fill", "rgba(0, 153, 153,0.3)")
       .attr("stroke", "darkgrey")
       .attr("stroke-width", function(d) {
-        return d/2;
+        return d/15;
       })
       .transition()
       .delay(function(d, i) {
@@ -97,5 +100,6 @@ var runData = function() {
 
   //console.log(d3.selectAll("li"));
   console.log(dataset);
+  document.getElementById("nums").innerHTML = dataset;
 
 };

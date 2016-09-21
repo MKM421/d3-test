@@ -4,6 +4,7 @@ body {
   margin:0 auto;
   background:teal;
   background-repeat:no-repeat;
+  font-family:Helvetica Neue;
 }
 svg {
   width:100%;
@@ -38,13 +39,14 @@ a:hover {
 
 #launch {
   position:fixed;
-  background:rgba(0,0,0,0.5);
-  border:2px solid rgba(255,255,255,0.3);
+  background:transparent;
+  border:2px solid lightgrey;
   border-radius:40px;
   z-index:9999;
   bottom:20px;
   left:20px;
   font-size:28px;
+  font-weight:100;
   padding:10px 35px;
   color:rgba(255,255,255,0.6);
 /*  -webkit-transform: rotate(-90deg);
@@ -58,6 +60,7 @@ a:hover {
 /*  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);*/
+  background:rgba(0,0,0,0.5);
   -webkit-transition:.3s;
   transition:.3s;
 }
@@ -68,18 +71,11 @@ a:hover {
   margin:0 auto;
   width:100%;
 }
-.bar {
-  display: inline-block;
-  width: 45px;
-  height: 75px;   /* We'll override this later */
-  background-color: teal;
-  margin:0 5px;
-  -webkit-transition: .3s;
-transition: .3s;
-}
-.bar:hover {
-  background:#888;
-  cursor:pointer;
-  -webkit-transition: .3s;
-transition: .3s;
+#nums {
+  position:fixed;
+  top:20px;
+  left:20px;
+  color:lightgrey;
+  letter-spacing:1px;
+  font-weight:100;
 }
