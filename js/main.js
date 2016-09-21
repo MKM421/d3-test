@@ -67,7 +67,7 @@ var circles = svg.selectAll("circle")
   .style("opacity", "1");
 
 
-svg.selectAll("text")
+/*svg.selectAll("text")
   .data(dataset)
   .enter()
   .append("text")
@@ -84,7 +84,7 @@ svg.selectAll("text")
   .attr("font-family", "sans-serif")
   .attr("font-size", "11px")
   .attr("fill", "white");
-
+*/
 
 
 
